@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.inventarioropa.controller.ProductoFormController"
+      spacing="18"
+      styleClass="form-container">
+
+    <padding>
+        <Insets top="28"
+                right="30"
+                bottom="28"
+                left="30"/>
+    </padding>
+
+    <!-- ENCABEZADO -->
+
+    <VBox spacing="4">
+
+        <Label fx:id="lblTitulo"
+               text="Nuevo producto"
+               styleClass="form-title"/>
+
+        <Label text="Completá los datos del producto"
+               styleClass="form-subtitle"/>
+
+    </VBox>
+
+
+    <!-- CAMPOS -->
+
+    <GridPane hgap="15"
+              vgap="8">
+
+        <!-- NOMBRE -->
+
+        <Label text="Nombre"
+               styleClass="form-label"
+               GridPane.rowIndex="0"
+               GridPane.columnIndex="0"
+               GridPane.columnSpan="2"/>
+
+        <TextField fx:id="txtNombre"
+                   promptText="Ej: Remera básica"
+                   styleClass="form-field"
+                   maxWidth="Infinity"
+                   GridPane.rowIndex="1"
+                   GridPane.columnIndex="0"
+                   GridPane.columnSpan="2"/>
+
+
+        <!-- CATEGORÍA -->
+
+        <Label text="Categoría"
+               styleClass="form-label"
+               GridPane.rowIndex="2"
+               GridPane.columnIndex="0"
+               GridPane.columnSpan="2"/>
+
+        <ComboBox fx:id="cmbCategoria"
+                  promptText="Seleccionar categoría"
+                  styleClass="form-field"
+                  maxWidth="Infinity"
+                  GridPane.rowIndex="3"
+                  GridPane.columnIndex="0"
+                  GridPane.columnSpan="2"/>
+
+
+        <!-- TALLE Y COLOR -->
+
+        <Label text="Talle"
+               styleClass="form-label"
+               GridPane.rowIndex="4"
+               GridPane.columnIndex="0"/>
+
+        <Label text="Color"
+               styleClass="form-label"
+               GridPane.rowIndex="4"
+               GridPane.columnIndex="1"/>
+
+
+        <TextField fx:id="txtTalle"
+                   promptText="Ej: M"
+                   styleClass="form-field"
+                   maxWidth="Infinity"
+                   GridPane.rowIndex="5"
+                   GridPane.columnIndex="0"/>
+
+        <TextField fx:id="txtColor"
+                   promptText="Ej: Negro"
+                   styleClass="form-field"
+                   maxWidth="Infinity"
+                   GridPane.rowIndex="5"
+                   GridPane.columnIndex="1"/>
+
+
+        <!-- PRECIO Y STOCK -->
+
+        <Label text="Precio"
+               styleClass="form-label"
+               GridPane.rowIndex="6"
+               GridPane.columnIndex="0"/>
+
+        <Label text="Stock"
+               styleClass="form-label"
+               GridPane.rowIndex="6"
+               GridPane.columnIndex="1"/>
+
+
+        <TextField fx:id="txtPrecio"
+                   promptText="Ej: 15000"
+                   styleClass="form-field"
+                   maxWidth="Infinity"
+                   GridPane.rowIndex="7"
+                   GridPane.columnIndex="0"/>
+
+        <TextField fx:id="txtStock"
+                   promptText="Ej: 20"
+                   styleClass="form-field"
+                   maxWidth="Infinity"
+                   GridPane.rowIndex="7"
+                   GridPane.columnIndex="1"/>
+
+    </GridPane>
+
+
+    <!-- BOTONES -->
+
+    <HBox spacing="10"
+          alignment="CENTER_RIGHT">
+
+        <Button text="Cancelar"
+                fx:id="btnCancelar"
+                onAction="#cancelar"
+                styleClass="btn-cancel"/>
+
+        <Button text="Guardar"
+                fx:id="btnGuardar"
+                onAction="#guardarProducto"
+                styleClass="btn-save"/>
+
+    </HBox>
+
+</VBox>

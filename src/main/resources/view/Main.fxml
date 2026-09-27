@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.inventarioropa.controller.MainController">
+
+    <!-- ========================= -->
+    <!-- BARRA LATERAL -->
+    <!-- ========================= -->
+
+    <left>
+
+        <VBox prefWidth="220"
+              spacing="8"
+              styleClass="sidebar">
+
+            <!-- LOGO / NOMBRE -->
+
+            <VBox spacing="3"
+                  styleClass="sidebar-header">
+
+                <Label text="INVENTARIO"
+                       styleClass="sidebar-title"/>
+
+                <Label text="GESTIÓN DE ROPA"
+                       styleClass="sidebar-subtitle"/>
+
+            </VBox>
+
+
+            <!-- NAVEGACIÓN -->
+
+            <VBox spacing="5"
+                  VBox.vgrow="ALWAYS">
+
+                <Label text="MENÚ"
+                       styleClass="sidebar-section"/>
+
+
+                <Button text="⌂   Inicio"
+                        fx:id="btnInicio"
+                        onAction="#abrirInicio"
+                        styleClass="sidebar-button"
+                        maxWidth="Infinity"/>
+
+
+                <Button text="▣   Productos"
+                        fx:id="btnProductos"
+                        onAction="#abrirProductos"
+                        styleClass="sidebar-button"
+                        maxWidth="Infinity"/>
+
+
+                <Button text="▤   Categorías"
+                        fx:id="btnCategorias"
+                        onAction="#abrirCategorias"
+                        styleClass="sidebar-button"
+                        maxWidth="Infinity"/>
+
+
+                <Button text="↔   Movimientos"
+                        fx:id="btnMovimientos"
+                        onAction="#abrirMovimientos"
+                        styleClass="sidebar-button"
+                        maxWidth="Infinity"/>
+
+
+                <Button text="▣   Ventas"
+                        fx:id="btnVentas"
+                        onAction="#abrirVentas"
+                        styleClass="sidebar-button"
+                        maxWidth="Infinity"/>
+                        
+                        
+                <Button text="⚙   Configuración"
+				        fx:id="btnConfiguracion"
+				        onAction="#abrirConfiguracion"
+				        styleClass="sidebar-button"
+				        maxWidth="Infinity"/>
+
+            </VBox>
+
+
+            <!-- PARTE INFERIOR -->
+
+            <VBox spacing="3"
+                  styleClass="sidebar-footer">
+
+                <Label text="Sistema de inventario"
+                       styleClass="sidebar-footer-text"/>
+
+                <Label text="v1.0"
+                       styleClass="sidebar-footer-version"/>
+
+            </VBox>
+
+        </VBox>
+
+    </left>
+
+
+    <!-- ========================= -->
+    <!-- CONTENIDO PRINCIPAL -->
+    <!-- ========================= -->
+
+    <center>
+
+        <BorderPane>
+
+            <!-- HEADER -->
+
+            <top>
+
+                <HBox alignment="CENTER_LEFT"
+                      spacing="10"
+                      styleClass="content-header">
+
+                    <VBox spacing="2">
+
+                        <Label fx:id="lblTituloVista"
+                               text="Dashboard"
+                               styleClass="content-title"/>
+
+                        <Label fx:id="lblSubtituloVista"
+                               text="Resumen general del inventario"
+                               styleClass="content-subtitle"/>
+
+                    </VBox>
+
+                </HBox>
+
+            </top>
+
+
+            <!-- VISTA DINÁMICA -->
+
+            <center>
+
+                <StackPane fx:id="contenidoPrincipal">
+
+                </StackPane>
+
+            </center>
+
+        </BorderPane>
+
+    </center>
+
+</BorderPane>

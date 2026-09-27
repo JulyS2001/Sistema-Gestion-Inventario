@@ -1,0 +1,643 @@
+/* =========================================================
+   BASE
+   ========================================================= */
+
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: #f4f6f8;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.sidebar {
+    -fx-background-color: #111827;
+    -fx-padding: 0 12px 12px 12px;
+}
+
+.sidebar-header {
+    -fx-padding: 24px 14px 25px 14px;
+}
+
+.sidebar-title {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.sidebar-subtitle {
+    -fx-text-fill: #9ca3af;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+.sidebar-section {
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 12px 6px 12px;
+}
+
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #d1d5db;
+    -fx-font-size: 14px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 11px 14px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-cursor: hand;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: #1f2937;
+    -fx-text-fill: white;
+}
+
+.sidebar-button:pressed {
+    -fx-background-color: #374151;
+}
+
+.sidebar-footer {
+    -fx-padding: 14px;
+    -fx-border-color: #1f2937 transparent transparent transparent;
+    -fx-border-width: 1px;
+}
+
+.sidebar-footer-text {
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 11px;
+}
+
+.sidebar-footer-version {
+    -fx-text-fill: #4b5563;
+    -fx-font-size: 10px;
+}
+
+
+/* =========================================================
+   HEADER PRINCIPAL
+   ========================================================= */
+
+.content-header {
+    -fx-background-color: white;
+    -fx-padding: 20px 28px;
+    -fx-border-color: transparent transparent #e5e7eb transparent;
+    -fx-border-width: 1px;
+}
+
+.content-title {
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.content-subtitle,
+.form-subtitle,
+.subtitle {
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 13px;
+}
+
+
+/* =========================================================
+   BOTONES
+   ========================================================= */
+
+.button {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+}
+
+
+/* BOTÓN PRIMARIO / GUARDAR */
+
+.btn-primary,
+.btn-save {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.btn-primary {
+    -fx-padding: 10px 16px;
+}
+
+.btn-save {
+    -fx-padding: 9px 20px;
+}
+
+.btn-primary:hover,
+.btn-save:hover {
+    -fx-background-color: #1d4ed8;
+}
+
+.btn-primary:pressed,
+.btn-save:pressed {
+    -fx-background-color: #1e40af;
+}
+
+
+/* BOTÓN EDITAR / CANCELAR */
+
+.btn-edit,
+.btn-cancel {
+    -fx-background-color: #e5e7eb;
+    -fx-text-fill: #374151;
+    -fx-padding: 9px 18px;
+}
+
+.btn-edit:hover,
+.btn-cancel:hover {
+    -fx-background-color: #d1d5db;
+}
+
+.btn-edit:pressed,
+.btn-cancel:pressed {
+    -fx-background-color: #cbd5e1;
+}
+
+
+/* BOTÓN ELIMINAR */
+
+.btn-delete {
+    -fx-background-color: #fee2e2;
+    -fx-text-fill: #b91c1c;
+    -fx-padding: 9px 18px;
+}
+
+.btn-delete:hover {
+    -fx-background-color: #fecaca;
+}
+
+.btn-delete:pressed {
+    -fx-background-color: #fca5a5;
+}
+
+
+/* BOTÓN VER DETALLE */
+
+.btn-detail {
+    -fx-background-color: #eff6ff;
+    -fx-text-fill: #1d4ed8;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 14px;
+}
+
+.btn-detail:hover {
+    -fx-background-color: #dbeafe;
+}
+
+.btn-detail:pressed {
+    -fx-background-color: #bfdbfe;
+}
+
+
+/* =========================================================
+   TÍTULOS
+   ========================================================= */
+
+.section-title {
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.form-title,
+.title {
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.form-label {
+    -fx-text-fill: #374151;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+
+/* =========================================================
+   CAMPOS
+   ========================================================= */
+
+.form-field,
+.search-field,
+.category-field,
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #d1d5db;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 10px 12px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #1f2937;
+}
+
+.form-field:hover,
+.search-field:hover,
+.category-field:hover,
+.combo-box:hover {
+    -fx-border-color: #9ca3af;
+}
+
+.form-field:focused,
+.search-field:focused,
+.category-field:focused,
+.combo-box:focused {
+    -fx-border-color: #2563eb;
+    -fx-border-width: 1.5px;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 14px;
+}
+
+
+/* =========================================================
+   LISTA DEL COMBOBOX
+   ========================================================= */
+
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+    -fx-border-color: #d1d5db;
+}
+
+.combo-box-popup .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: #374151;
+    -fx-font-size: 13px;
+    -fx-padding: 9px 12px;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #f3f4f6;
+}
+
+.combo-box-popup .list-cell:filled:selected {
+    -fx-background-color: #dbeafe;
+    -fx-text-fill: #1d4ed8;
+}
+
+
+/* =========================================================
+   TARJETAS
+   ========================================================= */
+
+.dashboard-card,
+.stats-card,
+.movement-form,
+.sale-product-form,
+.stats-summary,
+.sale-info-card,
+.total-container {
+    -fx-background-color: white;
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+.dashboard-card:hover,
+.stats-card:hover,
+.movement-form:hover,
+.stats-summary:hover,
+.sale-info-card:hover {
+    -fx-border-color: #d1d5db;
+}
+
+.dashboard-card,
+.stats-card {
+    -fx-padding: 16px;
+    -fx-spacing: 8px;
+}
+
+.movement-form,
+.sale-product-form,
+.stats-summary {
+    -fx-padding: 18px;
+}
+
+.sale-info-card {
+    -fx-padding: 14px 18px;
+}
+
+
+/* =========================================================
+   TEXTOS DE TARJETAS
+   ========================================================= */
+
+.card-title,
+.stats-card-title,
+.info-label {
+    -fx-text-fill: #6b7280;
+    -fx-font-weight: bold;
+}
+
+.card-title {
+    -fx-font-size: 12px;
+}
+
+.stats-card-title,
+.info-label {
+    -fx-font-size: 11px;
+}
+
+.card-value,
+.stats-card-value,
+.info-value {
+    -fx-text-fill: #1f2937;
+    -fx-font-weight: bold;
+}
+
+.card-value {
+    -fx-font-size: 24px;
+}
+
+.stats-card-value {
+    -fx-font-size: 22px;
+}
+
+.info-value {
+    -fx-font-size: 16px;
+}
+
+
+/* =========================================================
+   TABLAS
+   ========================================================= */
+
+.table-view,
+#tablaMovimientos {
+    -fx-background-color: white;
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+
+/* ENCABEZADO */
+
+.table-view .column-header-background,
+.table-view .column-header {
+    -fx-background-color: #f8fafc;
+}
+
+.table-view .column-header {
+    -fx-border-color: transparent transparent #e5e7eb transparent;
+    -fx-border-width: 1px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #374151;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+
+/* FILAS */
+
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent #f1f5f9 transparent;
+    -fx-border-width: 1px;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #f8fafc;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #dbeafe;
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: #1e3a8a;
+}
+
+
+/* CELDAS */
+
+.table-cell {
+    -fx-text-fill: #374151;
+    -fx-font-size: 13px;
+    -fx-padding: 8px 10px;
+}
+
+
+/* =========================================================
+   SCROLLBARS
+   ========================================================= */
+
+.table-view .scroll-bar,
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.table-view .scroll-bar .thumb,
+.scroll-bar .thumb {
+    -fx-background-color: #cbd5e1;
+    -fx-background-radius: 5px;
+}
+
+.table-view .scroll-bar .thumb:hover,
+.scroll-bar .thumb:hover {
+    -fx-background-color: #94a3b8;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: transparent;
+}
+
+
+/* =========================================================
+   BARRA INFERIOR
+   ========================================================= */
+
+.bottom-bar {
+    -fx-background-color: white;
+    -fx-padding: 14px 20px;
+    -fx-border-color: #e5e7eb transparent transparent transparent;
+    -fx-border-width: 1px;
+}
+
+
+/* =========================================================
+   MOVIMIENTOS
+   ========================================================= */
+
+#tablaMovimientos {
+    -fx-background-color: white;
+}
+
+
+/* =========================================================
+   VENTAS
+   ========================================================= */
+
+.sales-container,
+.sale-detail-container {
+    -fx-background-color: #f4f6f8;
+}
+
+
+/* NAVEGACIÓN */
+
+.sales-navigation {
+    -fx-background-color: white;
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 6px;
+}
+
+.sales-navigation .button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 9px 16px;
+}
+
+.sales-navigation .button:hover {
+    -fx-background-color: #f3f4f6;
+    -fx-text-fill: #1f2937;
+}
+
+.sales-navigation .btn-active {
+    -fx-background-color: #dbeafe;
+    -fx-text-fill: #1d4ed8;
+}
+
+
+/* =========================================================
+   NUEVA VENTA
+   ========================================================= */
+
+.sale-product-form {
+    -fx-padding: 18px;
+}
+
+.sale-table,
+.sales-history-table {
+    -fx-background-color: white;
+}
+
+
+/* =========================================================
+   HISTORIAL
+   ========================================================= */
+
+.sales-history,
+.sales-history-header,
+.stats-container {
+    -fx-background-color: transparent;
+}
+
+
+/* =========================================================
+   ESTADÍSTICAS
+   ========================================================= */
+
+.stats-filter {
+    -fx-background-color: white;
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 12px 15px;
+}
+
+
+/* =========================================================
+   TOTAL
+   ========================================================= */
+
+.total-label {
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+
+/* =========================================================
+   DETALLE DE VENTA
+   ========================================================= */
+
+.header {
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent #e5e7eb transparent;
+    -fx-border-width: 1px;
+}
+
+
+/* =========================================================
+   DIÁLOGOS
+   ========================================================= */
+
+.dialog-pane {
+    -fx-background-color: white;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #1f2937;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane .content.label {
+    -fx-text-fill: #374151;
+    -fx-font-size: 14px;
+}
+
+.dialog-pane .button {
+    -fx-background-color: #e5e7eb;
+    -fx-text-fill: #374151;
+    -fx-background-radius: 6px;
+    -fx-font-size: 13px;
+}
+
+.dialog-pane .button:default {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+}
+
+.dialog-pane .button:hover:default {
+    -fx-background-color: #1d4ed8;
+}
+
+
+/* =========================================================
+   ESTADOS
+   ========================================================= */
+
+.button:disabled,
+.text-field:disabled,
+.combo-box:disabled {
+    -fx-opacity: 0.55;
+}
+
+.button:focused {
+    -fx-border-color: transparent;
+}

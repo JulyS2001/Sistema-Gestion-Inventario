@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.inventarioropa.controller.HistorialVentasController"
+      spacing="15"
+      styleClass="sales-history">
+
+    <padding>
+        <Insets top="5"
+                right="5"
+                bottom="5"
+                left="5"/>
+    </padding>
+
+    <VBox spacing="4"
+          styleClass="sales-history-header">
+
+        <Label text="Historial de ventas"
+               styleClass="section-title"/>
+
+        <Label text="Consultá las ventas realizadas y sus detalles"
+               styleClass="form-subtitle"/>
+
+    </VBox>
+
+
+    <TableView fx:id="tablaVentas"
+               styleClass="sales-history-table"
+               VBox.vgrow="ALWAYS">
+
+        <columns>
+
+            <TableColumn fx:id="colVentaId"
+                         text="N° Venta"
+                         prefWidth="100"/>
+
+            <TableColumn fx:id="colVentaFecha"
+                         text="Fecha"
+                         prefWidth="180"/>
+
+            <TableColumn fx:id="colVentaTotal"
+                         text="Total"
+                         prefWidth="160"/>
+
+            <TableColumn fx:id="colVentaAcciones"
+                         text="Acciones"
+                         prefWidth="150"/>
+
+        </columns>
+
+    </TableView>
+
+</VBox>

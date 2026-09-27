@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.inventarioropa.controller.VentaDetalleController"
+            styleClass="sales-container">
+
+    <!-- =====================================================
+         ENCABEZADO
+         ===================================================== -->
+
+    <top>
+
+        <VBox spacing="4"
+              styleClass="header">
+
+            <padding>
+
+                <Insets top="20"
+                        right="25"
+                        bottom="20"
+                        left="25"/>
+
+            </padding>
+
+            <Label text="DETALLE DE VENTA"
+                   styleClass="title"/>
+
+            <Label text="Información de los productos vendidos"
+                   styleClass="subtitle"/>
+
+        </VBox>
+
+    </top>
+
+
+    <!-- =====================================================
+         CONTENIDO
+         ===================================================== -->
+
+    <center>
+
+        <VBox spacing="18">
+
+            <padding>
+
+                <Insets top="20"
+                        right="28"
+                        bottom="20"
+                        left="28"/>
+
+            </padding>
+
+
+            <!-- =================================================
+                 INFORMACIÓN DE LA VENTA
+                 ================================================= -->
+
+            <HBox spacing="15">
+
+                <!-- NÚMERO DE VENTA -->
+
+                <VBox spacing="5"
+                      styleClass="sale-info-card"
+                      HBox.hgrow="ALWAYS">
+
+                    <Label text="N° VENTA"
+                           styleClass="info-label"/>
+
+                    <Label fx:id="lblVentaId"
+                           text="-"
+                           styleClass="info-value"/>
+
+                </VBox>
+
+
+                <!-- FECHA -->
+
+                <VBox spacing="5"
+                      styleClass="sale-info-card"
+                      HBox.hgrow="ALWAYS">
+
+                    <Label text="FECHA"
+                           styleClass="info-label"/>
+
+                    <Label fx:id="lblVentaFecha"
+                           text="-"
+                           styleClass="info-value"/>
+
+                </VBox>
+
+            </HBox>
+
+
+            <!-- =================================================
+                 PRODUCTOS
+                 ================================================= -->
+
+            <VBox spacing="10"
+                  VBox.vgrow="ALWAYS">
+
+                <Label text="Productos vendidos"
+                       styleClass="section-title"/>
+
+                <TableView fx:id="tablaDetalles"
+                           VBox.vgrow="ALWAYS">
+
+                    <columns>
+
+                        <TableColumn fx:id="colProducto"
+                                     text="Producto"
+                                     prefWidth="250"/>
+
+                        <TableColumn fx:id="colCantidad"
+                                     text="Cantidad"
+                                     prefWidth="100"/>
+
+                        <TableColumn fx:id="colPrecio"
+                                     text="Precio unitario"
+                                     prefWidth="150"/>
+
+                        <TableColumn fx:id="colSubtotal"
+                                     text="Subtotal"
+                                     prefWidth="150"/>
+
+                    </columns>
+
+                </TableView>
+
+            </VBox>
+
+
+            <!-- =================================================
+                 TOTAL
+                 ================================================= -->
+
+            <HBox alignment="CENTER_RIGHT"
+                  spacing="20"
+                  styleClass="total-container">
+
+                <Label text="TOTAL"
+                       styleClass="section-title"/>
+
+                <Label fx:id="lblTotal"
+                       text="0"
+                       styleClass="total-label"/>
+
+            </HBox>
+
+        </VBox>
+
+    </center>
+
+</BorderPane>

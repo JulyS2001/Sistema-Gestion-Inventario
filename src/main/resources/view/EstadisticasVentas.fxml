@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.inventarioropa.controller.EstadisticasVentasController"
+      spacing="18">
+
+    <padding>
+        <Insets top="5"
+                right="5"
+                bottom="5"
+                left="5"/>
+    </padding>
+
+
+    <!-- =====================================================
+         ENCABEZADO
+         ===================================================== -->
+
+    <VBox spacing="4">
+
+        <Label text="Estadísticas de ventas"
+               styleClass="section-title"/>
+
+        <Label text="Consultá el rendimiento de las ventas del negocio"
+               styleClass="form-subtitle"/>
+
+    </VBox>
+
+
+    <!-- =====================================================
+         FILTRO
+         ===================================================== -->
+
+    <HBox spacing="10"
+          alignment="CENTER_LEFT">
+
+        <Label text="Período:"
+               styleClass="form-label"/>
+
+        <ComboBox fx:id="cmbPeriodo"
+                  prefWidth="180"
+                  promptText="Seleccionar período"
+                  styleClass="form-field"/>
+
+    </HBox>
+
+
+    <!-- =====================================================
+         TARJETAS PRINCIPALES
+         ===================================================== -->
+
+    <HBox spacing="15">
+
+        <!-- VENTAS -->
+
+        <VBox spacing="8"
+              styleClass="dashboard-card"
+              HBox.hgrow="ALWAYS">
+
+            <Label text="VENTAS"
+                   styleClass="card-title"/>
+
+            <Label fx:id="lblVentas"
+                   text="0"
+                   styleClass="card-value"/>
+
+        </VBox>
+
+
+        <!-- CANTIDAD DE VENTAS -->
+
+        <VBox spacing="8"
+              styleClass="dashboard-card"
+              HBox.hgrow="ALWAYS">
+
+            <Label text="CANTIDAD DE VENTAS"
+                   styleClass="card-title"/>
+
+            <Label fx:id="lblCantidadVentas"
+                   text="0"
+                   styleClass="card-value"/>
+
+        </VBox>
+
+
+        <!-- UNIDADES -->
+
+        <VBox spacing="8"
+              styleClass="dashboard-card"
+              HBox.hgrow="ALWAYS">
+
+            <Label text="UNIDADES VENDIDAS"
+                   styleClass="card-title"/>
+
+            <Label fx:id="lblUnidadesVendidas"
+                   text="0"
+                   styleClass="card-value"/>
+
+        </VBox>
+
+
+        <!-- TICKET PROMEDIO -->
+
+        <VBox spacing="8"
+              styleClass="dashboard-card"
+              HBox.hgrow="ALWAYS">
+
+            <Label text="TICKET PROMEDIO"
+                   styleClass="card-title"/>
+
+            <Label fx:id="lblTicketPromedio"
+                   text="0"
+                   styleClass="card-value"/>
+
+        </VBox>
+
+    </HBox>
+
+
+    <!-- =====================================================
+         RESUMEN
+         ===================================================== -->
+
+    <VBox spacing="10"
+          styleClass="movement-form"
+          VBox.vgrow="ALWAYS">
+
+        <Label text="Resumen del período"
+               styleClass="section-title"/>
+
+        <Label fx:id="lblResumen"
+               text="Seleccioná un período para consultar las estadísticas."
+               styleClass="form-subtitle"/>
+
+    </VBox>
+
+</VBox>

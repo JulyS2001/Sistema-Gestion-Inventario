@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.inventarioropa.controller.DashboardController"
+      spacing="20">
+
+    <padding>
+        <Insets top="25"
+                right="28"
+                bottom="25"
+                left="28"/>
+    </padding>
+
+
+    <!-- TARJETAS PRINCIPALES -->
+
+    <HBox spacing="15">
+
+        <VBox spacing="8"
+              styleClass="dashboard-card"
+              HBox.hgrow="ALWAYS">
+
+            <Label text="PRODUCTOS"
+                   styleClass="card-title"/>
+
+            <Label fx:id="lblCantidadProductos"
+                   text="0"
+                   styleClass="card-value"/>
+
+        </VBox>
+
+
+        <VBox spacing="8"
+              styleClass="dashboard-card"
+              HBox.hgrow="ALWAYS">
+
+            <Label text="STOCK TOTAL"
+                   styleClass="card-title"/>
+
+            <Label fx:id="lblStockTotal"
+                   text="0"
+                   styleClass="card-value"/>
+
+        </VBox>
+
+
+        <VBox spacing="8"
+              styleClass="dashboard-card"
+              HBox.hgrow="ALWAYS">
+
+            <Label text="VALOR INVENTARIO"
+                   styleClass="card-title"/>
+
+            <Label fx:id="lblValorInventario"
+                   text="0"
+                   styleClass="card-value"/>
+
+        </VBox>
+
+
+        <VBox spacing="8"
+              styleClass="dashboard-card"
+              HBox.hgrow="ALWAYS">
+
+            <Label text="STOCK BAJO"
+                   styleClass="card-title"/>
+
+            <Label fx:id="lblStockBajo"
+                   text="0"
+                   styleClass="card-value"/>
+
+        </VBox>
+
+    </HBox>
+
+
+    <!-- INFORMACIÓN -->
+
+    <VBox spacing="10">
+
+        <Label text="Resumen del inventario"
+               styleClass="section-title"/>
+
+        <Label text="Seleccioná una opción del menú lateral para comenzar a gestionar tu inventario."
+               styleClass="form-subtitle"/>
+
+    </VBox>
+
+</VBox>

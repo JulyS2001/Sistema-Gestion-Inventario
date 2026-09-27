@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.inventarioropa.controller.VentaController"
+      spacing="15">
+
+    <padding>
+        <Insets top="5"
+                right="5"
+                bottom="5"
+                left="5"/>
+    </padding>
+
+    <!-- NAVEGACIÓN -->
+    <HBox fx:id="navegacionVentas"
+          spacing="5"
+          styleClass="sales-navigation">
+
+        <Button fx:id="btnNuevaVenta"
+                text="Nueva venta"
+                onAction="#mostrarNuevaVenta"/>
+
+        <Button fx:id="btnHistorial"
+                text="Historial"
+                onAction="#mostrarHistorial"/>
+
+        <Button fx:id="btnEstadisticas"
+                text="Estadísticas"
+                onAction="#mostrarEstadisticas"/>
+
+    </HBox>
+
+    <!-- CONTENIDO -->
+    <StackPane fx:id="contenidoVentas"
+               VBox.vgrow="ALWAYS"/>
+
+</VBox>
